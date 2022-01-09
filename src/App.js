@@ -30,15 +30,15 @@ export default class App extends Component {
 
       />
         <Switch>
-          <Route exact path="/"> <News setProgress={this.setProgress}  key='general'  pageSize={15} country='in' category='general'/> </Route>
-          <Route exact path="/home"> <News setProgress={this.setProgress}  key='home'pageSize={15} country='in' category='home'/> </Route>
-          <Route exact path="/business"> <News setProgress={this.setProgress}  key='business' pageSize={15} country='in' category='business'/> </Route>
-          <Route exact path="/technology"> <News setProgress={this.setProgress}  key='technlogy' pageSize={15} country='in' category='technology'/> </Route>
-          <Route exact path="/sport"> <News setProgress={this.setProgress}  key='sport' pageSize={15} country='in' category='sport'/> </Route>
-          <Route exact path="/general"> <News setProgress={this.setProgress}  key='general' pageSize={15} country='in' category='general'/> </Route>
-          <Route exact path="/health"> <News setProgress={this.setProgress}  key='health' pageSize={15} country='in' category='health'/> </Route>
-          <Route exact path="/entertainment"> <News setProgress={this.setProgress}  key='entertainment' pageSize={15} country='in' category='entertainment'/> </Route>
-          <Route exact path="/science"> <News setProgress={this.setProgress}  key='science' pageSize={15} country='in' category='science'/> </Route>
+          <Route exact path="/"> <News setProgress={this.setProgress}  key='general'  country='in' category='general'/> </Route>
+          <Route exact path="/home"> <News setProgress={this.setProgress}  key='home'  country='in' category='home'/> </Route>
+          <Route exact path="/business"> <News setProgress={this.setProgress}  key='business'   country='in' category='business'/> </Route>
+          <Route exact path="/technology"> <News setProgress={this.setProgress}  key='technlogy'   country='in' category='technology'/> </Route>
+          <Route exact path="/sport"> <News setProgress={this.setProgress}  key='sport'   country='in' category='sport'/> </Route>
+          <Route exact path="/general"> <News setProgress={this.setProgress}  key='general'   country='in' category='general'/> </Route>
+          <Route exact path="/health"> <News setProgress={this.setProgress}  key='health'   country='in' category='health'/> </Route>
+          <Route exact path="/entertainment"> <News setProgress={this.setProgress}  key='entertainment'   country='in' category='entertainment'/> </Route>
+          <Route exact path="/science"> <News setProgress={this.setProgress}  key='science'   country='in' category='science'/> </Route>
         </Switch>
         </Router>         
         </div>
