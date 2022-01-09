@@ -18,7 +18,7 @@ const News = (props)=>{
 
     const updateNews = async ()=> {
         props.setProgress(10);
-        const link = `https://newsdata.io/api/1/news?apikey=pub_3469f7386261b52062b0ee381ebd74a7ccc0&country=${props.country}&language=en&category=${props.category}&page=${page}&pageSize=${props.pageSize}`; 
+        const link = `https://newsdata.io/api/1/news?apikey=pub_3469f7386261b52062b0ee381ebd74a7ccc0&country=${props.country}&language=en&category=${props.category}&page=${page}`; 
         setLoading(true)
         let data = await fetch(link);
         props.setProgress(30);
@@ -38,7 +38,7 @@ const News = (props)=>{
 
 
     const fetchMoreData = async () => {   
-        const link = `https://newsdata.io/api/1/news?apikey=pub_3469f7386261b52062b0ee381ebd74a7ccc0&country=${props.country}&language=en&category=${props.category}&page=${page+1}&`;
+        const link = `https://newsdata.io/api/1/news?apikey=pub_3469f7386261b52062b0ee381ebd74a7ccc0&country=${props.country}&language=en&category=${props.category}&page=${page+1}`;
         setPage(page+1) 
         let data = await fetch(link);
         let parsedData = await data.json()
